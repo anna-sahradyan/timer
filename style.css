@@ -1,0 +1,111 @@
+
+* {
+    font-family: "Azeret Mono ", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.timer_block {
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.time {
+    background-color: #2987be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    font-size: 95px;
+
+}
+
+.title {
+    background-color: #1059b8;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.button {
+
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    animation: pulsate 3s ease-out infinite;
+    border: 3px solid indigo;
+    border-radius: 10px;
+
+}
+
+.start, .stop, .pause {
+    color: #2987be;
+}
+
+.stop:hover, .start:hover {
+    background-color: #1059b8;
+    color: white;
+}
+
+.pause:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.input {
+  margin-left: 40%;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    animation: pulsate 3s ease-out infinite;
+    border: 3px solid indigo;
+    border-radius: 10px;
+
+
+}
+
+@keyframes pulsate {
+    0% {
+        border-color:  deepskyblue;
+    }
+    50% {
+        border-color: salmon;
+    }
+    100% {
+        border-color: orange;
+    }
+}
